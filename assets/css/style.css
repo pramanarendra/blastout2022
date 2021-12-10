@@ -17,6 +17,7 @@ body {
     background-color: #ECE8E1;
     color: #3B487E;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /*--=========== NAVBAR ===========--*/
