@@ -213,6 +213,7 @@ div.login-btn button:hover {
     /*--=========== NAVBAR ===========--*/
     nav {
         padding: 17px 30px;
+        z-index: 2;
     }
 
     nav > div.menu {
