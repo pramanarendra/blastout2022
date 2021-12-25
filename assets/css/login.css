@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'DM Mono', monospace;
+    background-color: #131C43;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    background-image: url("../img/background\ semi\ transparent.svg");
+}
+
+body.active {
+    background-color: #431313;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.behind {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECE8E1;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+}
+
+.behind .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.behind .box h2 {
+    color: #3B487E;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.behind .box.login h2 {
+    color: #431313;
+}
+
+.form.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ECE8E1;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    top: -50px;
+    left: 5px;
+    margin: 10px;
+    width: 30px;
+    border: 2px solid #3B487E;
+    transition: 0.2s;
+}
+
+.form.bg.active {
+    left: 50%;
+}
+
+.form.bg.active .close {
+    top: 0px;
+    left: 5px;
+}
+
+.form.bg .form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.form.bg .login-form {
+    transition-delay: 0.2s;
+}
+
+.form.bg.active .login-form {
+    left: -100%;
+    transition-delay: 0s;
+}
+
+
+.form.bg .regis-form {
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.form.bg.active .regis-form {
+    left: 0;
+    transition-delay: 0.2s;
+}
+
+.form.bg .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form.bg .form form h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #131C43;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-wrapper {
+    transition: all 0.2s;
+    margin-bottom: 15px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    color: #131C43;
+    background-color: #C4C4C4;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    height: 55px;
+    border: 3px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 20px 10px 10px 13px;
+    transition: all 0.2s;
+}
+
+.input-wrapper label {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #3B487E;
+    display: block;
+    position: absolute;
+    transform: translateY(-2.5rem) translateX(1rem);
+    transform-origin: 0 0;
+    transition: all 0.2s;
+}
+
+.input-wrapper input:focus, input:not(:placeholder-shown) {
+    outline: none;
+    background-color: #ECE8E1;
+    border: 3px solid #C4C4C4;
+    
+}
+
+::placeholder {
+    color: #C4C4C4;
+}
+
+.input-wrapper input:focus ~ label, input:not(:placeholder-shown) ~ label {
+    transform: translateY(-3.1rem) translateX(1rem);
+    font-size: 0.8rem;
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3B487E;
+    color: #ECE8E1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+form button:hover, .form.bg.active form button:hover{
+    background-color: #1E1E1D;
+}
+
+.form.bg.active form button {
+    background-color: #FF0054;
+}
+
+.forgot {
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*button*/
+.btn {
+    cursor: pointer;
+    color: #ECE8E1;
+    font-size: 0.9rem;
+    font-family: 'DM Mono', monospace;
+    background-color: #ECE8E1;
+    padding: 1.3rem 4rem;
+    border: none;
+    background: url("../img/button\ slider\ blue.svg");
+    background-size: 150%;
+    background-position: 500%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+}
+
+.regis .btn {
+    background-image: url("../img/button\ slider\ red.svg");
+}
+
+.btn:hover {
+    background-position: 50%;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: #131C43;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn:hover::before {
+    background-color: #131C43;
+}
+
+.btn-main::after {
+    content: "";
+    position: absolute;
+    background-color: #131C43;
+    width: 0.4rem;
+    height: 0.4rem;
+    bottom: -1px;
+    right: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-border {
+    background-color: #FF0054;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-border .regis {
+    background-color: #3B487E;
+}
+
+.btn-border::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.9rem);
+    height: 50%;
+    left: -0.5rem;
+    top: -0.5rem;
+    border: 1px solid #3B487E;
+    border-bottom: 0px;
+    opacity: 0.3;
+}
+
+.btn-border::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.9rem);
+    height: 50%;
+    left: -0.5rem;
+    bottom: -0.5rem;
+    border: 1px solid #3B487E;
+    border-top: 0px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+@media screen and (max-width: 961px) {
+    .container {
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .behind {
+        top: 0;
+        height: 100%;
+    }
+
+    .form.bg {
+        width: 100%;
+        height: 500px;
+        top: 0;
+    }
+
+    .behind .box {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+
+    .box.login {
+        top: 0;
+    }
+
+    .form.bg.active {
+        left: 0;
+        top: 150px;
+    }
+}
