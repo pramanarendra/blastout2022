@@ -20,227 +20,267 @@
 
 <body>
     <!--=========== NAVBAR ===========-->
-    <nav>
-        <img class="nav-logo" src="assets/img/navbar logo.svg" alt="">
+    <div id="blurbg">
+        <nav>
+            <img class="nav-logo" src="assets/img/navbar logo.svg" alt="">
 
-        <div class="menu">
-            <ul>
-                <li><a href="#landing-page">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="login-btn">
-                <button>LOGIN</button>
+            <div class="menu">
+                <ul>
+                    <li><a href="#landing-page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="login-btn">
+                    <a href="login.html">LOGIN</a>
+                </div>
+            </div>
+
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </nav>
+
+        <!--=========== LANDING PAGE ===========-->
+        <div id="landing-page" class="landing-wrapper">
+            <div class="center-box">
+                <div class="left-side-box"></div>
+                <div class="main-content">
+                    <p>Try Out Akbar PTN Persembahan Balairungklass UGM</p>
+                    <img class="landing-page-logo" src="assets/img/landing page logo.svg" alt="">
+                </div>
+                <div class="right-side-box"></div>
+            </div>
+            <div class="btn-border">
+                <button class="btn-main">Register Now</button>
             </div>
         </div>
 
-        <button class="hamburger hamburger--emphatic" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    </nav>
-
-    <!--=========== LANDING PAGE ===========-->
-    <div id="landing-page" class="landing-wrapper">
-        <div class="center-box">
-            <div class="left-side-box"></div>
-            <div class="main-content">
-                <p>Try Out Akbar PTN Persembahan Balairungklass UGM</p>
-                <img class="landing-page-logo" src="assets/img/landing page logo.svg" alt="">
+        <!--=========== ABOUT ===========-->
+        <div id="about" class="about-container">
+            <div class="about">
+                <div class="about-text">
+                    <div class="about-line"></div>
+                    <h2>blast out</h2>
+                    <h3>Perjuangan Menuju SBMPTN</h3>
+                    <p>Balairungklass Try Out merupakan acara tahunan yang diselenggarakan oleh Balairung KLaten
+                        Assotiation
+                        sebagai bentuk persiapan adik-adik SMA untuk memasuki perguruan tinggi. BlastOut juga
+                        menghadirkan
+                        pembicara dan TalkShow guna membangkitkan semangat peserta dalam menghadapi
+                        SBMPTN serta guest star yang ditampilkan untuk menyemarakkan acara. Pada tahun ini mengusung
+                        tema
+                        "Gladi
+                        Widya Adharma Anantha" Yang merupakan bentuk semangat dari
+                        perjungan menuju SBMPTN yang sesungguhnya.</p>
+                </div>
+                <img class="bklass-image" src="assets/img/foto balairung about.svg">
             </div>
-            <div class="right-side-box"></div>
         </div>
-        <div class="btn-border">
-            <button class="btn-main">Register Now</button>
+        <!--=========== TIMELINE ===========-->
+        <div id="timeline" class="timeline-container">
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <p class="date">20 Januari 2022</p>
+                            <h3>Heading 1</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
+                                perspiciatis optio
+                                omnis rerum minima repellendus fugit ab provident?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <p class="date">20 Januari 2022</p>
+                            <h3>Heading 2</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
+                                perspiciatis optio
+                                omnis rerum minima repellendus fugit ab provident?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <p class="date">20 Januari 2022</p>
+                            <h3>Heading 3</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
+                                perspiciatis optio
+                                omnis rerum minima repellendus fugit ab provident?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <p class="date">20 Januari 2022</p>
+                            <h3>Heading 4</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
+                                perspiciatis optio
+                                omnis rerum minima repellendus fugit ab provident?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <p class="date">20 Januari 2022</p>
+                            <h3>Heading 5</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
+                                perspiciatis optio
+                                omnis rerum minima repellendus fugit ab provident?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!--=========== ABOUT ===========-->
-    <div id="about" class="about-container">
+        <!--=========== TESTIMONIAL ===========-->
+        <div id="testimonial" class="testimonial-container">
+            <h2>Kata Mereka</h2>
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="card">
+                        <article>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id
+                                voluptas
+                                magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
+                                facilis
+                                sunt necessitatibus alias. Velit, saepe facere.</p>
+                        </article>
+                        <div class="person-info">
+                            <div class="person-image"></div>
+                            <div class="person-name">
+                                <p class="additional">Ilmu Komputer - UGM</p>
+                                <p class="name">Muh Akbar Ariffandi</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-    </div>
+                <li class="item-b">
+                    <div class="card">
+                        <article>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id
+                                voluptas
+                                magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
+                                facilis
+                                sunt necessitatibus alias. Velit, saepe facere.</p>
+                        </article>
+                        <div class="person-info">
+                            <div class="person-image"></div>
+                            <div class="person-name">
+                                <p class="additional">Ilmu Komputer - UGM</p>
+                                <p class="name">Muh Akbar Ariffandi</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-    <!--=========== TIMELINE ===========-->
-    <div id="timeline" class="timeline-container">
-        <h2>Timeline</h2>
-        <div class="timeline">
-            <ul>
-                <li>
-                    <div class="timeline-content">
-                        <p class="date">20 Januari 2022</p>
-                        <h3>Heading 1</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
-                            perspiciatis optio
-                            omnis rerum minima repellendus fugit ab provident?</p>
+                <li class="item-c">
+                    <div class="card">
+                        <article>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id
+                                voluptas
+                                magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
+                                facilis
+                                sunt necessitatibus alias. Velit, saepe facere.</p>
+                        </article>
+                        <div class="person-info">
+                            <div class="person-image"></div>
+                            <div class="person-name">
+                                <p class="additional">Ilmu Komputer - UGM</p>
+                                <p class="name">Muh Akbar Ariffandi</p>
+                            </div>
+                        </div>
                     </div>
                 </li>
-                <li>
-                    <div class="timeline-content">
-                        <p class="date">20 Januari 2022</p>
-                        <h3>Heading 2</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
-                            perspiciatis optio
-                            omnis rerum minima repellendus fugit ab provident?</p>
+
+                <li class="item-d">
+                    <div class="card">
+                        <article>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id
+                                voluptas
+                                magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
+                                facilis
+                                sunt necessitatibus alias. Velit, saepe facere.</p>
+                        </article>
+                        <div class="person-info">
+                            <div class="person-image"></div>
+                            <div class="person-name">
+                                <p class="additional">Ilmu Komputer - UGM</p>
+                                <p class="name">Muh Akbar Ariffandi</p>
+                            </div>
+                        </div>
                     </div>
                 </li>
-                <li>
-                    <div class="timeline-content">
-                        <p class="date">20 Januari 2022</p>
-                        <h3>Heading 3</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
-                            perspiciatis optio
-                            omnis rerum minima repellendus fugit ab provident?</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-content">
-                        <p class="date">20 Januari 2022</p>
-                        <h3>Heading 4</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
-                            perspiciatis optio
-                            omnis rerum minima repellendus fugit ab provident?</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-content">
-                        <p class="date">20 Januari 2022</p>
-                        <h3>Heading 5</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti quidem
-                            perspiciatis optio
-                            omnis rerum minima repellendus fugit ab provident?</p>
+
+                <li class="item-d">
+                    <div class="card">
+                        <article>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id
+                                voluptas
+                                magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
+                                facilis
+                                sunt necessitatibus alias. Velit, saepe facere.</p>
+                        </article>
+                        <div class="person-info">
+                            <div class="person-image"></div>
+                            <div class="person-name">
+                                <p class="additional">Ilmu Komputer - UGM</p>
+                                <p class="name">Muh Akbar Ariffandi</p>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
+
         </div>
+
+        <!--=========== MEDIA PARTNER ===========-->
+        <div id="partner" class="partner-container">
+            <h2>Our Partner</h2>
+        </div>
+
+        <!--=========== CONTACT ===========-->
+        <footer id="contact">
+            <div class="logo-footer">
+                <img class="logo-BOt" src="assets/img/Blast Out.svg" alt="Logo Blast Out">
+                <img class="logo-Bklass" src="assets/img/Bklass.svg" alt="Logo Bklass">
+            </div>
+            <div class="event-name">
+                <h2>Blast Out 2022</h2>
+                <h2>Balairung Klaten Association</h2>
+            </div>
+            <div class="social-media">
+                <a class="logo" href="https://www.instagram.com/blastout2022/" target="_blank"><img
+                        src="assets/img/Instagram.svg" alt="Instagram"></a>
+                <a class="logo" href="https://twitter.com/BalairungKlass" target="_blank"><img
+                        src="assets/img/Twitter.svg" alt="Twitter"></a>
+                <a class="logo" href="https://www.youtube.com/channel/UCG2PZjBQq2rJrgax7EJJOMg" target="_blank"><img
+                        src="assets/img/YouTube.svg" alt="YouTube"></a>
+                <a class="logo" href="https://api.whatsapp.com/send?phone=0895400419358" target="_blank"><img
+                        src="assets/img/Whatsapp.svg" alt="Whatsapp"></a>
+            </div>
+        </footer>
     </div>
 
-    <!--=========== TESTIMONIAL ===========-->
-    <div id="testimonial" class="testimonial-container">
-        <h2>Kata Mereka</h2>
-        <ul id="autoWidth" class="cs-hidden">
-            <li class="item-a">
-                <div class="card">
-                    <article>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id voluptas
-                            magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
-                            facilis
-                            sunt necessitatibus alias. Velit, saepe facere.</p>
-                    </article>
-                    <div class="person-info">
-                        <div class="person-image"></div>
-                        <div class="person-name">
-                            <p class="additional">Ilmu Komputer - UGM</p>
-                            <p class="name">Muh Akbar Ariffandi</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item-b">
-                <div class="card">
-                    <article>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id voluptas
-                            magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
-                            facilis
-                            sunt necessitatibus alias. Velit, saepe facere.</p>
-                    </article>
-                    <div class="person-info">
-                        <div class="person-image"></div>
-                        <div class="person-name">
-                            <p class="additional">Ilmu Komputer - UGM</p>
-                            <p class="name">Muh Akbar Ariffandi</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item-c">
-                <div class="card">
-                    <article>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id voluptas
-                            magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
-                            facilis
-                            sunt necessitatibus alias. Velit, saepe facere.</p>
-                    </article>
-                    <div class="person-info">
-                        <div class="person-image"></div>
-                        <div class="person-name">
-                            <p class="additional">Ilmu Komputer - UGM</p>
-                            <p class="name">Muh Akbar Ariffandi</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item-d">
-                <div class="card">
-                    <article>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id voluptas
-                            magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
-                            facilis
-                            sunt necessitatibus alias. Velit, saepe facere.</p>
-                    </article>
-                    <div class="person-info">
-                        <div class="person-image"></div>
-                        <div class="person-name">
-                            <p class="additional">Ilmu Komputer - UGM</p>
-                            <p class="name">Muh Akbar Ariffandi</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item-d">
-                <div class="card">
-                    <article>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime non consequatur id voluptas
-                            magni voluptates, laudantium quo, iste perspiciatis quisquam expedita illum doloribus
-                            facilis
-                            sunt necessitatibus alias. Velit, saepe facere.</p>
-                    </article>
-                    <div class="person-info">
-                        <div class="person-image"></div>
-                        <div class="person-name">
-                            <p class="additional">Ilmu Komputer - UGM</p>
-                            <p class="name">Muh Akbar Ariffandi</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
+    <div id="pop-up">
+        <a class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#FF0054">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </a>
+        <h2>Petunjuk Pendaftaran</h2>
+        <ol>
+            <li>Pastikan kamu memiliki akun Eduka, jika belum mempunyai silahkan <a
+                    href="https://login.edukasystem.com/auth/register" target="_blank">Daftar di sini</a></li>
+            <li>Jika sudah, silahkan isi Biodata kamu pada laman Pendaftaran Blastout</li>
+            <li>Selanjutnya, Kamu akan menerima email verifikasi untuk dapat mengakses Dashboard Peserta</li>
+            <li>Lakukan pembayaran sesuai petunjuk pada Dashboard Peserta tersebut</li>
+            <li>Kamu tinggal menunggu untuk kami verifikasi pembayaranmu</li>
+            <li>Yeayy! Selamat kamu sudah menjadi peserta Blastout 2022</li>
+        </ol>
     </div>
-
-    <!--=========== MEDIA PARTNER ===========-->
-    <div id="partner" class="partner-container">
-        <h2>Our Partner</h2>
-    </div>
-
-    <!--=========== CONTACT ===========-->
-    <footer id="contact">
-        <div class="logo-footer">
-            <img class="logo-BOt" src="assets/img/Blast Out.svg" alt="Logo Blast Out">
-            <img class="logo-Bklass" src="assets/img/Bklass.svg" alt="Logo Bklass">
-        </div>
-        <div class="event-name">
-            <h2>Blast Out 2022</h2>
-            <h2>Balairung Klaten Association</h2>
-        </div>
-        <div class="social-media">
-            <a class="logo" href="https://www.instagram.com/blastout2022/" target="_blank"><img
-                    src="assets/img/Instagram.svg" alt="Instagram"></a>
-            <a class="logo" href="https://twitter.com/BalairungKlass" target="_blank"><img src="assets/img/Twitter.svg"
-                    alt="Twitter"></a>
-            <a class="logo" href="https://www.youtube.com/channel/UCG2PZjBQq2rJrgax7EJJOMg" target="_blank"><img
-                    src="assets/img/YouTube.svg" alt="YouTube"></a>
-            <a class="logo" href="https://api.whatsapp.com/send?phone=0895400419358" target="_blank"><img
-                    src="assets/img/Whatsapp.svg" alt="Whatsapp"></a>
-        </div>
-
-    </footer>
 
     <!--=========== JS ===========-->
     <script src="assets/js/main.js"></script>
