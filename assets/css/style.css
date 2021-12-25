@@ -65,9 +65,13 @@ nav ul li a {
 
 div.login-btn{
     padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div.login-btn button {
+div.login-btn a {
+    text-decoration: none;
     background-color: #FF0054;
     border: none;
     color: #ECE8E1;
@@ -79,7 +83,7 @@ div.login-btn button {
     transition: 0.2s ease-in;
 }
 
-div.login-btn button:hover {
+div.login-btn a:hover {
     background-color: #585858;
 }
 
@@ -96,19 +100,8 @@ div.login-btn button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.landing-wrapper::before {
-    content: "";
-    background-image: url('../img/background.svg');
+    background-image: url('../img/background\ semi\ transparent.svg');
     background-size: contain;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.6;
 }
 
 .center-box {
@@ -140,6 +133,61 @@ div.login-btn button:hover {
 
 .landing-page-logo {
   width: 90%;
+}
+
+/*pop up*/
+#blurbg {
+    transition: 0.3s;
+}
+
+#pop-up {
+    transform: translateY(10px);
+    visibility: hidden;
+    opacity: 0;
+    color: #131C43;
+    z-index: 3;
+    background-color: #ECE8E1;
+    position: fixed;
+    top: 20%;
+    left: 33vw;
+    width: 35vw;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    transition: 0.2s ease-in-out;
+}
+
+#pop-up.active {
+    transform: translateY(0);
+    opacity: 100%;
+    visibility: visible;
+}
+
+#pop-up h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px;
+}
+
+#pop-up li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 5px;
+    left: 5px;
+    margin: 10px;
+    width: 30px;
+    border: 2px solid #3B487E;
+}
+
+#blurbg.active {
+    margin-top: -80px;
+    filter: blur(5px);
 }
 
 /*--=========== MAIN BUTTON ===========--*/
@@ -226,7 +274,74 @@ div.login-btn button:hover {
 
 /*--=========== ABOUT ===========--*/
 .about-container {
-    height: 200px;
+    color: #1B023D;
+    background-image: url("../img/background\ ver\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 30vw;
+    margin-right: 50px;
+}
+
+.about-text h2 {
+    color: #131C43;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.about-line {
+    position: relative;
+    margin: 10px 0px;
+    left: 0px;
+    width: 30vw;
+    height: 0.5px;
+    background-color: #131C43;
+    opacity: 1;
+}
+
+.about-line::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: -3px;
+    background-color: #131C43;
+}
+
+.about-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-text p{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.bklass-image {
+    height: 23vw;
 }
 
 /*--=========== TIMELINE ===========--*/
@@ -240,6 +355,8 @@ div.login-btn button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-image: url('../img/background\ semi\ transparent.svg');
+    background-size: contain;
 }
 
 .timeline-container h2 {
@@ -302,10 +419,11 @@ div.login-btn button:hover {
 }
 
 /*--=========== TESTIMONIAL ===========--*/
-
 .testimonial-container {
     padding: 100px 50px;
     width: 100%;
+    background-image: url("../img/background\ ver\ 3.png");
+    background-size: contain;
 }
 
 .testimonial-container h2 {
@@ -471,7 +589,7 @@ a.logo img {
 /*--=========== MOBILE VER ===========--*/
 
 /*--=========== MOBILE VER ===========--*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 961px) {
     /*--=========== NAVBAR ===========--*/
     nav {
         padding: 17px 30px;
@@ -507,6 +625,11 @@ a.logo img {
         opacity: 1;
     }
 
+    #pop-up {
+        width: 80vw;
+        top: 40px;
+        left: 10vw;
+    }
     /*--=========== LANDING PAGE ===========--*/
     .landing-wrapper {
         background-color: #131C43;
@@ -517,6 +640,7 @@ a.logo img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-size: cover;
     }
 
     .landing-wrapper::before {
@@ -562,6 +686,38 @@ a.logo img {
 
     .btn-main {
         padding: 1rem 3rem;
+    }
+
+    /*--============== ABOUT ==============--*/
+    .about-container{
+        background-size: contain;
+        background-repeat: repeat;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 100px 50px;
+    }
+
+    .about-text h2 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    .about-line {
+        width: 40vw;
+    }
+
+    .about-text {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .bklass-image {
+        margin-top: 30px;
+        height: 60vw;
     }
 
     /*--=========== TESTIMONIAL ===========--*/
@@ -686,7 +842,7 @@ a.logo img {
     transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
 }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 961px) {
     /*--=========== TIMELINE ===========--*/
     .timeline-container h2 {
         font-size: 5rem;
